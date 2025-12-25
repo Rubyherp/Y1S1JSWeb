@@ -1,0 +1,36 @@
+      body {
+        font-family: Arial;
+      }
+
+      .subscribe-button /*CSS selector, the code infront of the brackets. Tell which one you want to style */ {
+        border: none; /*property and value seperated with a :, end with ; */
+        background-color: black;
+        color: white;
+        padding-top: 10px; /*px - pixels */
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .is-subscribed /* from adding a new class in the subscribe() function */ {
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
+
+      .cost-input {
+        font-size: 15px;
+        padding: 10px;
+      }      
+      
+      .calculate-button {
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 15px;
+        padding: 12px 15px; /* seperated with a space. first indicate top/bottom, second is left/right */
+        cursor: pointer;
+      }

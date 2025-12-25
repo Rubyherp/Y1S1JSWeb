@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays and Loops</title>
+  </head>
+  <body>
+    <script>
+        /*
+        console.log(Array.isArray([1,2]));
+        const myArray = [1,2,3,4];
+        myArray.push(100)
+        console.log(myArray);
+        myArray.splice(0, 1); //first value is the index. second value is the number of elements to remove
+        console.log(myArray);
+
+        let res = 0;
+        for (let i = 0; i<= myArray.length-1; i++){
+            res = res + myArray[i];
+            console.log(res);
+        }
+        console.log(res);
+
+        let arr = [];
+        for (let i = 0; i < myArray.length; i++){
+            arr.push(myArray[i] * 2);
+        }
+        console.log(arr);
+        */
+
+        // arrays are references
+        const arr1 = [1,2,3,4];
+        const arr2 = arr1;
+        arr2.push(4);
+        console.log(arr2);
+        console.log(arr1);
+        // to make a copy -->
+        const arr3 = arr1.slice();
+        
+        const [firstValue, secondValue] = [1,2,3];
+        
+        for (let i = 1; i <= 10; i++) {
+            if (i === 3){
+                continue; //skips the rest of the code when i === 3
+            }
+            console.log(i);
+            if (i === 8){
+                break;
+            }
+        }
+
+        let i = 0;
+        while (i <= 10){
+            if (i%3 === 0) {
+                i++; //necessary. else will create a infinite loop
+                continue;
+            }
+            console.log(i);
+            i++
+        }
+
+
+    </script>
+  </body>
+</html>
+
